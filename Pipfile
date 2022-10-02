@@ -10,6 +10,7 @@ gunicorn = "*"
 sklearn = "*"
 joblib = "*"
 pandas = "*"
+flask-sqlalchemy = "*"
 
 [dev-packages]
 
