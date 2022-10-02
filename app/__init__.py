@@ -1,14 +1,12 @@
 
 from flask import Flask, render_template, redirect, url_for, session, request
-from flask_sqlalchemy import SQLAlchemy
 
-from app.lib.forms import PreferencesForm
-from app.lib.model import get_suburb_from_prefs
+from .lib.forms import PreferencesForm
+from .lib.model import get_suburb_from_prefs
 
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "be4f1a2528babbfe522d6fc83008a35c"
-db = SQLAlchemy(app)
 
 
 def get_rent_values(multiplier: int, rent_number: int = None) -> dict:
