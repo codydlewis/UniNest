@@ -114,6 +114,9 @@ form details[open] .bx-chevron-right {
     font-weight: 500;
 }
 
+form summary::-webkit-details-marker {
+    display: none;
+}
 
 
 
