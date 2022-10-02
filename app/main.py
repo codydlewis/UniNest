@@ -1,8 +1,8 @@
 
 from flask import Flask, render_template, redirect, url_for, session, request
 
-from forms import PreferencesForm
-from model import get_suburb_from_prefs
+from .forms import PreferencesForm
+from .model import get_suburb_from_prefs
 
 
 app = Flask(__name__)
