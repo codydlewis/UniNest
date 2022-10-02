@@ -1,0 +1,59 @@
+{% extends "layout-static.html" %}
+
+{% block main %}
+    <div class="centred-content" id="landing">
+        <div class="text">
+            <p class="summary-text">Student suburb locator</p>
+            <p class="featured-text">Find your best nest.</p>
+            <div class="description-text">
+                <!-- TODO: Insert proper descriptive text -->
+                <p>Enim irure sit do duis incididunt. Fugiat aute amet tempor veniam labore dolor sint proident in aliquip aliqua exercitation veniam. Mollit in ad anim culpa ex pariatur duis Lorem laboris cupidatat magna mollit elit.</p>
+                <p>Ad reprehenderit ad consectetur labore ex idla est eu Lorem pariatur anim amet velit. Ea exercitation cillum consectetur esse deserunt. Pariatur aliquip cupidatat sit labore officia duis qui aliquip incididunt id proident. Laborum reprehenderit duis ex elit eiusmod.</p>
+            </div>
+            <div class="button-row">
+                <a href="#get-started-section" class="button bordered">Get started</a>
+                <a href="{{ url_for('data') }}" class="button featured">Learn more</a>
+            </div>
+        </div>
+        <div class="art">
+            <img src="{{ url_for('static', filename='imgs/LandingPage-Art.svg') }}" alt="isometric house art">
+        </div>
+    </div>
+
+    
+    <div class="centred-content">
+        <div class="section-header">
+            <h2 class="title">Features</h2>
+            <p class="description">Explore what features makes UniNest so good.</p>
+        </div>
+
+        <div class="three-col">
+            <div class="card">
+                <div class="icon"><span class="bx bx-fingerprint"></span></div>
+                <div class="title">Personalised for you</div>
+                <div class="description">Use the extensive list of inputs to find the suburb which best fits your personalised needs.</div>
+            </div>
+            <div class="card">
+                <div class="icon"><span class="bx bx-map-alt"></span></div>
+                <div class="title">Interactive context</div>
+                <div class="description">See the recommended suburb on an interactive map.</div>
+            </div>
+            <div class="card">
+                <div class="icon"><span class="bx bx-receipt"></span></div>
+                <div class="title">Detailed justification</div>
+                <div class="description">See various statistics about the recommended suburb and why this suburb is a good fit for you.</div>
+            </div>
+        </div>
+    </div>
+
+     <div id="get-started-section" class="centred-content">
+        <div class="section-header">
+            <h2 class="title">Get started</h2>
+            <p class="description">Enter your preferences and get a personalised recommendation for your new community.</p>
+        </div>
+
+        <div class="three-col">
+            TODO: insert preferences form here
+        </div>
+    </div>
+{% endblock %}

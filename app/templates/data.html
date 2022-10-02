@@ -1,0 +1,68 @@
+{% extends "layout-static.html" %}
+
+
+{% block main %}
+<div class="centred-content">
+    <div class="section-header">
+        <h2 class="title">Data</h2>
+        <p class="description">See where the data for our machine learning model comes from.</p>
+    </div>
+
+    <!-- TODO: Make this pretty with cards and icons, and make sure all data sources are mentioned -->
+    <table>
+        <colgroup>
+            <col span="1" style="width: 10%;">
+            <col span="1" style="width: 30%;">
+            <col span="1" style="width: 10%;">
+            <col span="1" style="width: 30%;">
+            <col span="1" style="width: 15%;">
+        </colgroup>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Time</th>
+            <th>Contains</th>
+            <th>Source</th>
+        </tr>
+        <tr>
+            <td>ABS Regional Data</td>
+            <td>Data available for every region in Australia, from large areas, to small suburb areas from the Australian Census.</td>
+            <td>2021</td>
+            <td>Rent prices, transportation used, population sizes, land use, available businesses</td>
+            <td><a href="https://dbr.abs.gov.au/index.html">https://dbr.abs.gov.au/index.html</a></td>
+        </tr>
+        <tr>
+            <td>LGA profiles</td>
+            <td>Regional data by local government.</td>
+            <td>2015</td>
+            <td>Population Diversity Disadvantage and social engagement Housing, transport and education Health status and
+                service utilisation Child and family characteristics and service utilisation Rankings.</td>
+            <td><a
+                    href="https://discover.data.vic.gov.au/dataset/2015-local-government-area-profiles">https://discover.data.vic.gov.au/dataset/2015-local-government-area-profiles</a>
+            </td>
+        </tr>
+        <tr>
+            <td>PTV GTFS</td>
+            <td>Public Transport Victoria data including station/stop locations and timetables.</td>
+            <td>2022</td>
+            <td>Public transport for all of Victoria.</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Local criminal incidents</td>
+            <td>Crime data by LGAs and by postcode/suburb.</td>
+            <td>2013-2022</td>
+            <td>Statistics about the characteristics of crime recorded by Victoria Police in the Law Enforcement Assistance
+                Program (LEAP)</td>
+            <td><a
+                    href="https://www.crimestatistics.vic.gov.au/crime-statistics/download-crime-data">https://www.crimestatistics.vic.gov.au/crime-statistics/download-crime-data</a>
+            </td>
+        </tr>
+        <tr>
+    </table>
+</div>
+{% endblock %}
+
+
+
+
