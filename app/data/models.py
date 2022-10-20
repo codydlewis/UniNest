@@ -1,5 +1,5 @@
 
-from app import db
+from app.main import db
 
 
 class Suburb(db.Model):
